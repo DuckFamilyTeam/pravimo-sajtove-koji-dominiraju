@@ -6,28 +6,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Izrada Sajtova Novi Sad | Web Dizajn & SEO Optimizacija | DuckFamilyTeam</title>
+<title>Izrada Sajtova Novi Sad | Web Dizajn koji Donosi Klijente | DuckFamilyTeam</title>
 
-<meta name="description" content="Izrada modernih SEO optimizovanih sajtova u Srbiji. DuckFamilyTeam pravi web sajtove koji donose klijente i povećavaju prodaju.">
-<meta name="keywords" content="izrada sajtova Novi Sad, web dizajn Srbija, SEO optimizacija, digitalna agencija, landing page, wordpress sajtovi">
+<meta name="description" content="Izrada premium SEO optimizovanih sajtova u Srbiji. DuckFamilyTeam pravi moderne web sajtove koji privlače klijente i povećavaju prodaju.">
+<meta name="keywords" content="izrada sajtova Novi Sad, web dizajn Srbija, SEO optimizacija, digitalna agencija, landing page, wordpress sajtovi, izrada web sajtova">
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/">
-
 <link rel="icon" href="images/logo.png">
 
-<!-- Open Graph -->
+<!-- OPEN GRAPH -->
 <meta property="og:title" content="Izrada Sajtova Novi Sad | DuckFamilyTeam">
-<meta property="og:description" content="SEO optimizovani sajtovi koji donose klijente.">
+<meta property="og:description" content="Premium web dizajn i SEO koji donosi klijente i prodaju.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/">
 <meta property="og:image" content="images/logo.png">
+
+<!-- GOOGLE SEO SIGNAL (Schema WebSite + LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "DuckFamilyTeam",
+  "url": "https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "DuckFamilyTeam",
+  "description": "Agencija za izradu sajtova i SEO optimizaciju",
+  "url": "https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/",
+  "areaServed": "Serbia"
+}
+</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 
+/* BASE */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
 body{background:#020617;color:white;overflow-x:hidden}
 
@@ -37,10 +63,11 @@ position:fixed;
 width:100%;
 height:100%;
 top:0;left:0;
-background:radial-gradient(circle at 20% 30%, #6366f1, transparent 40%),
-radial-gradient(circle at 80% 70%, #a855f7, transparent 40%);
+background:
+radial-gradient(circle at 20% 30%, #6366f1 0%, transparent 45%),
+radial-gradient(circle at 80% 70%, #a855f7 0%, transparent 45%);
 filter:blur(120px);
-opacity:.5;
+opacity:.55;
 z-index:-1;
 }
 
@@ -50,14 +77,14 @@ position:fixed;
 top:20px;
 left:50%;
 transform:translateX(-50%);
-width:90%;
+width:92%;
 max-width:1200px;
 padding:15px 25px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(16px);
 border-radius:20px;
 border:1px solid rgba(255,255,255,0.1);
 z-index:1000;
@@ -67,19 +94,21 @@ z-index:1000;
 .logo img{height:40px}
 
 .nav-links{display:flex;gap:25px;list-style:none}
-.nav-links a{text-decoration:none;color:white;opacity:.8}
+.nav-links a{text-decoration:none;color:white;opacity:.75}
 .nav-links a:hover{opacity:1;color:#6366f1}
 
 .btn{
-background:#6366f1;
+background:linear-gradient(90deg,#6366f1,#a855f7);
 padding:12px 22px;
 border-radius:10px;
 text-decoration:none;
 color:white;
-font-weight:600;
+font-weight:700;
+transition:.3s;
 }
+.btn:hover{transform:scale(1.05)}
 
-/* HERO */
+/* HERO (HIGH-CONVERSION COPY) */
 .hero{
 height:100vh;
 display:flex;
@@ -91,21 +120,32 @@ padding:20px;
 }
 
 .hero h1{
-font-size:clamp(40px,6vw,80px);
+font-size:clamp(40px,6vw,82px);
 font-weight:800;
-line-height:1.1;
+line-height:1.05;
+max-width:1000px;
 }
 
 .hero p{
-max-width:650px;
-color:#9ca3af;
+max-width:720px;
+color:#cbd5e1;
 margin-top:20px;
+font-size:18px;
+line-height:1.6;
 }
 
+/* SECTIONS */
 .section{
-padding:100px 6%;
+padding:110px 6%;
 max-width:1200px;
 margin:auto;
+}
+
+h2{
+font-size:38px;
+font-weight:800;
+margin-bottom:20px;
+text-align:center;
 }
 
 /* GRID */
@@ -120,6 +160,11 @@ background:rgba(255,255,255,0.05);
 padding:30px;
 border-radius:20px;
 border:1px solid rgba(255,255,255,0.08);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-6px);
+border-color:#6366f1;
 }
 
 /* PORTFOLIO */
@@ -139,10 +184,10 @@ overflow:hidden;
 border:1px solid rgba(255,255,255,0.08);
 transition:.3s;
 }
-
 .project:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 border-color:#6366f1;
+box-shadow:0 20px 60px rgba(99,102,241,0.3);
 }
 
 .project img{width:100%;height:200px;object-fit:cover}
@@ -153,7 +198,7 @@ form{
 display:flex;
 flex-direction:column;
 gap:15px;
-max-width:500px;
+max-width:520px;
 margin:auto;
 }
 
@@ -169,8 +214,8 @@ color:white;
 footer{
 text-align:center;
 padding:40px;
-border-top:1px solid rgba(255,255,255,0.1);
-color:#9ca3af;
+border-top:1px solid rgba(255,255,255,0.08);
+color:#94a3b8;
 margin-top:80px;
 }
 
@@ -186,7 +231,7 @@ margin-top:80px;
 <nav>
 
 <div class="logo">
-<img src="images/logo.png" alt="DuckFamilyTeam Logo">
+<img src="images/logo.png" alt="DuckFamilyTeam SEO i Web Dizajn Agencija">
 <span>DuckFamilyTeam</span>
 </div>
 
@@ -196,41 +241,43 @@ margin-top:80px;
 <li><a href="#contact">Kontakt</a></li>
 </ul>
 
-<a href="tel:0643877529" class="btn">Pozovi</a>
+<a href="tel:0643877529" class="btn">Pozovi odmah</a>
 
 </nav>
 
 <!-- HERO -->
 <section class="hero">
 
-<h1>Izrada Sajtova koji Donose Klijente</h1>
+<h1>Web Sajtovi koji Ne Samo Izgledaju Dobro — Već Donose Klijente</h1>
 
-<p>SEO optimizovani web sajtovi za firme u Srbiji. Dizajn + marketing + konverzija.</p>
+<p>
+Mi pravimo SEO optimizovane sajtove za firme u Srbiji koji privlače kupce, povećavaju prodaju i rade 24/7 kao vaš najbolji prodavac.
+</p>
 
-<a href="#contact" class="btn">Besplatna konsultacija</a>
+<a href="#contact" class="btn">Zatraži besplatnu analizu</a>
 
 </section>
 
 <!-- SERVICES -->
 <section class="section" id="services">
 
-<h2>Naše Usluge</h2>
+<h2>Naše Usluge koje Donose Rezultate</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Web Dizajn</h3>
-<p>Moderni i brzi sajtovi koji izgledaju premium.</p>
+<h3>Izrada Sajtova Novi Sad</h3>
+<p>Premium web sajtovi optimizovani za Google koji donose realne klijente, ne samo posetioce.</p>
 </div>
 
 <div class="card">
 <h3>SEO Optimizacija</h3>
-<p>Poboljšanje Google rangiranja i vidljivosti.</p>
+<p>Podizanje vašeg sajta na Google pretrazi kroz naprednu SEO strategiju i content optimizaciju.</p>
 </div>
 
 <div class="card">
-<h3>Landing Stranice</h3>
-<p>Stranice koje pretvaraju posetioce u klijente.</p>
+<h3>Landing Stranice koje Prodaju</h3>
+<p>Stranice sa visokom konverzijom koje pretvaraju posetioce u kupce.</p>
 </div>
 
 </div>
@@ -239,24 +286,24 @@ margin-top:80px;
 
 <!-- SEO CONTENT -->
 <section class="section">
-
 <h2>Izrada Sajtova Novi Sad</h2>
-<p>Pravimo profesionalne sajtove za firme u Novom Sadu i Srbiji koji donose klijente putem Google pretrage.</p>
-
+<p style="text-align:center;max-width:800px;margin:auto;color:#cbd5e1">
+Specijalizovani smo za izradu modernih web sajtova za firme u Novom Sadu i Srbiji koje žele više klijenata putem Google pretrage.
+</p>
 </section>
 
 <section class="section">
-
-<h2>SEO Optimizacija Sajtova</h2>
-<p>Pomažemo vašem biznisu da se pojavi na Google-u i dobije više upita i poziva.</p>
-
+<h2>SEO Strategija za Rast Biznisa</h2>
+<p style="text-align:center;max-width:800px;margin:auto;color:#cbd5e1">
+Optimizujemo sajtove tako da se rangiraju na Google-u i dovode konstantan broj upita i poziva.
+</p>
 </section>
 
 <section class="section">
-
-<h2>Landing Stranice koje Prodaju</h2>
-<p>Kreiramo konverzione landing stranice koje povećavaju prodaju i broj klijenata.</p>
-
+<h2>Landing Stranice koje Prodaju 24/7</h2>
+<p style="text-align:center;max-width:800px;margin:auto;color:#cbd5e1">
+Kreiramo prodajne stranice koje rade kao automatizovani sistem za generisanje klijenata.
+</p>
 </section>
 
 <!-- PORTFOLIO -->
@@ -269,10 +316,9 @@ margin-top:80px;
 <a class="project" href="https://duckfamilyteam.github.io/Dubinsko-pranje-Vetar/" target="_blank">
 
 <img src="images/dubinsko-pranje-vetar.jpg">
-
 <div class="project-info">
 <h3>Dubinsko Pranje Vetar</h3>
-<p>SEO optimizovan sajt za servis dubinskog pranja.</p>
+<p>SEO optimizovan projekat sa realnim konverzijama.</p>
 </div>
 
 </a>
@@ -290,26 +336,15 @@ margin-top:80px;
 <input type="text" placeholder="Ime">
 <input type="email" placeholder="Email">
 <textarea placeholder="Poruka"></textarea>
-<button class="btn">Pošalji</button>
+<button class="btn">Pošalji upit</button>
 </form>
 
 </section>
 
 <!-- FOOTER -->
 <footer>
-© 2026 DuckFamilyTeam - Sva prava zadržana
+© 2026 DuckFamilyTeam — Web Dizajn & SEO Agencija u Srbiji
 </footer>
-
-<!-- SEO SCHEMA -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"DuckFamilyTeam",
-"url":"https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/",
-"areaServed":"Serbia"
-}
-</script>
 
 </body>
 </html>
