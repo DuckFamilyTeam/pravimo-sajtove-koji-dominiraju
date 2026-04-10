@@ -1,12 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="sr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DuckFamilyTeam | Izrada Modernih Sajtova</title>
+<title>DuckFamilyTeam | Premium Web Design</title>
 
-<meta name="description" content="DuckFamilyTeam digitalna agencija. Pravimo ultra moderne sajtove koji donose klijente. Web dizajn, SEO i digitalni marketing.">
+<meta name="description" content="DuckFamilyTeam digitalna agencija. Premium web dizajn, SEO i moderni sajtovi koji donose klijente.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -22,13 +25,29 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Inter, sans-serif;
+font-family:Inter,sans-serif;
 background:#020617;
 color:white;
 overflow-x:hidden;
 }
 
-/* NAV */
+/* animated gradient background */
+
+.bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 30%, #6366f1 0%, transparent 50%),
+radial-gradient(circle at 80% 70%, #a855f7 0%, transparent 50%);
+filter:blur(120px);
+opacity:.5;
+z-index:-1;
+}
+
+/* NAVBAR */
 
 nav{
 position:fixed;
@@ -38,14 +57,18 @@ transform:translateX(-50%);
 width:90%;
 max-width:1200px;
 padding:15px 30px;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,255,255,0.04);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.08);
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+
 border-radius:20px;
-z-index:999;
+border:1px solid rgba(255,255,255,.08);
+
+z-index:1000;
 }
 
 .logo{
@@ -85,16 +108,13 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-background:
-radial-gradient(circle at top,#1e1b4b,transparent 60%),
-#020617;
 }
 
 .hero h1{
-font-size:clamp(45px,7vw,85px);
+font-size:clamp(50px,7vw,90px);
 font-weight:800;
 line-height:1.1;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .gradient{
@@ -104,7 +124,7 @@ background:linear-gradient(90deg,#6366f1,#a855f7);
 }
 
 .hero p{
-max-width:600px;
+max-width:650px;
 color:#9ca3af;
 font-size:18px;
 margin-bottom:40px;
@@ -123,18 +143,37 @@ transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.05);
-box-shadow:0 0 25px rgba(99,102,241,.5);
+transform:translateY(-3px);
+box-shadow:0 10px 40px rgba(99,102,241,.5);
 }
 
-.btn-secondary{
-background:#a855f7;
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:40px;
+margin-top:80px;
+max-width:900px;
 }
 
-/* SECTION */
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:40px;
+color:#6366f1;
+}
+
+.stat p{
+color:#9ca3af;
+}
+
+/* SECTIONS */
 
 .section{
-padding:100px 6%;
+padding:120px 6%;
 max-width:1200px;
 margin:auto;
 }
@@ -143,21 +182,21 @@ margin:auto;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
 .card{
-background:rgba(255,255,255,.03);
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
 padding:40px;
 border-radius:20px;
-border:1px solid rgba(255,255,255,.08);
 transition:.3s;
 }
 
 .card:hover{
-border-color:#6366f1;
 transform:translateY(-5px);
+border-color:#6366f1;
 }
 
 /* PORTFOLIO */
@@ -165,41 +204,46 @@ transform:translateY(-5px);
 .portfolio{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-margin-top:40px;
+gap:25px;
+margin-top:50px;
 }
 
 .project{
-height:250px;
+height:260px;
 border-radius:20px;
-background:linear-gradient(135deg,#6366f1,#a855f7);
 display:flex;
 align-items:center;
 justify-content:center;
 font-weight:700;
+
+background:
+linear-gradient(135deg,#6366f1,#a855f7);
+
+transition:.4s;
+}
+
+.project:hover{
+transform:scale(1.03);
 }
 
 /* TESTIMONIAL */
 
 .testimonial{
-background:rgba(255,255,255,.03);
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
 padding:30px;
 border-radius:20px;
-border:1px solid rgba(255,255,255,.08);
 }
 
 /* CONTACT */
 
-.contact{
-text-align:center;
-}
-
 form{
 max-width:500px;
-margin:30px auto;
+margin:auto;
 display:flex;
 flex-direction:column;
 gap:15px;
+margin-top:30px;
 }
 
 input,textarea{
@@ -208,15 +252,6 @@ border-radius:8px;
 border:1px solid rgba(255,255,255,.1);
 background:#020617;
 color:white;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:40px;
-border-top:1px solid rgba(255,255,255,.08);
-margin-top:60px;
 }
 
 /* FLOATING CALL */
@@ -233,21 +268,32 @@ align-items:center;
 justify-content:center;
 border-radius:50%;
 font-size:22px;
-box-shadow:0 0 20px rgba(0,0,0,.5);
-z-index:999;
+box-shadow:0 0 25px rgba(0,0,0,.5);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid rgba(255,255,255,.08);
+margin-top:80px;
+color:#9ca3af;
 }
 
 </style>
+
 </head>
 
 <body>
+
+<div class="bg"></div>
 
 <nav>
 
 <div class="logo">Duck<span>Family</span>Team</div>
 
 <ul class="nav-links">
-<li><a href="#home">Početna</a></li>
 <li><a href="#services">Usluge</a></li>
 <li><a href="#portfolio">Portfolio</a></li>
 <li><a href="#contact">Kontakt</a></li>
@@ -257,19 +303,34 @@ z-index:999;
 
 </nav>
 
-<section class="hero" id="home">
+<section class="hero">
 
-<h1>Pravimo sajtove koji <span class="gradient">donose klijente</span></h1>
+<h1>
+Pravimo sajtove koji <span class="gradient">donose klijente</span>
+</h1>
 
 <p>
-Mi smo DuckFamilyTeam digitalna agencija. Specijalizovani za moderne sajtove, SEO optimizaciju i dizajn koji pretvara posetioce u kupce.
+Premium web dizajn, SEO optimizacija i strategija koja pretvara posetioce u kupce.
 </p>
-
-<div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center">
 
 <a href="#contact" class="btn">Besplatna konsultacija</a>
 
-<a href="tel:0643877529" class="btn btn-secondary">Pozovi odmah</a>
+<div class="stats">
+
+<div class="stat">
+<h2>50+</h2>
+<p>projekata</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>zadovoljni klijenti</p>
+</div>
+
+<div class="stat">
+<h2>5x</h2>
+<p>više konverzija</p>
+</div>
 
 </div>
 
@@ -277,26 +338,25 @@ Mi smo DuckFamilyTeam digitalna agencija. Specijalizovani za moderne sajtove, SE
 
 <section class="section" id="services">
 
-<h2 style="text-align:center;font-size:40px;margin-bottom:60px">Naše Usluge</h2>
+<h2 style="text-align:center;font-size:40px;margin-bottom:60px;">
+Naše Usluge
+</h2>
 
 <div class="grid">
 
 <div class="card">
-<i class="fa fa-code"></i>
 <h3>Web Dizajn</h3>
-<p>Ultra moderan dizajn koji izgleda premium i pretvara posetioce u klijente.</p>
+<p>Moderan dizajn koji izgleda premium i prodaje vaše usluge.</p>
 </div>
 
 <div class="card">
-<i class="fa fa-search"></i>
 <h3>SEO Optimizacija</h3>
-<p>Pomažemo vašem sajtu da se pojavi na vrhu Google pretrage.</p>
+<p>Vaš sajt se pojavljuje na vrhu Google pretrage.</p>
 </div>
 
 <div class="card">
-<i class="fa fa-bolt"></i>
-<h3>Brzina Sajta</h3>
-<p>Optimizujemo sajt za maksimalne performanse.</p>
+<h3>Landing Pages</h3>
+<p>Stranice optimizovane za maksimalnu konverziju.</p>
 </div>
 
 </div>
@@ -305,7 +365,9 @@ Mi smo DuckFamilyTeam digitalna agencija. Specijalizovani za moderne sajtove, SE
 
 <section class="section" id="portfolio">
 
-<h2 style="text-align:center;font-size:40px;">Portfolio</h2>
+<h2 style="text-align:center;font-size:40px;">
+Portfolio
+</h2>
 
 <div class="portfolio">
 
@@ -319,34 +381,35 @@ Mi smo DuckFamilyTeam digitalna agencija. Specijalizovani za moderne sajtove, SE
 
 <section class="section">
 
-<h2 style="text-align:center;font-size:40px;margin-bottom:50px;">Iskustva Klijenata</h2>
+<h2 style="text-align:center;font-size:40px;margin-bottom:40px;">
+Iskustva Klijenata
+</h2>
 
 <div class="grid">
 
 <div class="testimonial">
 ⭐⭐⭐⭐⭐  
-"Profesionalna saradnja i odličan dizajn."
+"Profesionalan tim i fantastičan dizajn."
 </div>
 
 <div class="testimonial">
 ⭐⭐⭐⭐⭐  
-"Sajt izgleda fantastično i brz je."
+"Sajt izgleda premium i radi brzo."
 </div>
 
 </div>
 
 </section>
 
-<section class="section contact" id="contact">
+<section class="section" id="contact" style="text-align:center;">
 
-<h2 style="font-size:45px;">Započnimo vaš projekat</h2>
-
-<p style="color:#9ca3af">Kontaktirajte nas i napravimo sajt koji donosi klijente.</p>
+<h2 style="font-size:45px;">
+Započnimo vaš projekat
+</h2>
 
 <form>
 
 <input type="text" placeholder="Ime" required>
-
 <input type="email" placeholder="Email" required>
 
 <textarea placeholder="Poruka"></textarea>
@@ -359,7 +422,7 @@ Mi smo DuckFamilyTeam digitalna agencija. Specijalizovani za moderne sajtove, SE
 
 <footer>
 
-<p>© 2026 DuckFamilyTeam</p>
+© 2026 DuckFamilyTeam
 
 </footer>
 
@@ -369,3 +432,4 @@ Mi smo DuckFamilyTeam digitalna agencija. Specijalizovani za moderne sajtove, SE
 
 </body>
 </html>
+```
