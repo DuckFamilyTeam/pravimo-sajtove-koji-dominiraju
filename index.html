@@ -1,15 +1,14 @@
 ```html
 <!DOCTYPE html>
 <html lang="sr">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DuckFamilyTeam | Premium Web Design</title>
+<title>DuckFamilyTeam | Izrada Modernih Sajtova</title>
 
-<meta name="description" content="DuckFamilyTeam digitalna agencija. Premium web dizajn, SEO i moderni sajtovi koji donose klijente.">
+<meta name="description" content="DuckFamilyTeam digitalna agencija. Izrada modernih i brzih sajtova koji donose klijente. Web dizajn i SEO optimizacija.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -31,7 +30,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* animated gradient background */
+/* gradient background */
 
 .bg{
 position:fixed;
@@ -47,7 +46,7 @@ opacity:.5;
 z-index:-1;
 }
 
-/* NAVBAR */
+/* navbar */
 
 nav{
 position:fixed;
@@ -98,7 +97,22 @@ opacity:1;
 color:#6366f1;
 }
 
-/* HERO */
+.btn{
+background:#6366f1;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 40px rgba(99,102,241,.5);
+}
+
+/* hero */
 
 .hero{
 height:100vh;
@@ -114,7 +128,7 @@ padding:20px;
 font-size:clamp(50px,7vw,90px);
 font-weight:800;
 line-height:1.1;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .gradient{
@@ -130,31 +144,14 @@ font-size:18px;
 margin-bottom:40px;
 }
 
-/* BUTTON */
-
-.btn{
-background:#6366f1;
-padding:15px 35px;
-border-radius:12px;
-text-decoration:none;
-color:white;
-font-weight:600;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 40px rgba(99,102,241,.5);
-}
-
-/* STATS */
+/* stats */
 
 .stats{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 gap:40px;
-margin-top:80px;
-max-width:900px;
+margin-top:60px;
+max-width:800px;
 }
 
 .stat{
@@ -162,7 +159,7 @@ text-align:center;
 }
 
 .stat h2{
-font-size:40px;
+font-size:38px;
 color:#6366f1;
 }
 
@@ -170,7 +167,7 @@ color:#6366f1;
 color:#9ca3af;
 }
 
-/* SECTIONS */
+/* section */
 
 .section{
 padding:120px 6%;
@@ -178,7 +175,7 @@ max-width:1200px;
 margin:auto;
 }
 
-/* CARDS */
+/* cards */
 
 .grid{
 display:grid;
@@ -199,34 +196,43 @@ transform:translateY(-5px);
 border-color:#6366f1;
 }
 
-/* PORTFOLIO */
+/* portfolio */
 
 .portfolio{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-margin-top:50px;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:40px;
 }
 
 .project{
-height:260px;
+display:block;
+background:rgba(255,255,255,.04);
 border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:700;
-
-background:
-linear-gradient(135deg,#6366f1,#a855f7);
-
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+text-decoration:none;
+color:white;
 transition:.4s;
 }
 
-.project:hover{
-transform:scale(1.03);
+.project img{
+width:100%;
+height:200px;
+object-fit:cover;
 }
 
-/* TESTIMONIAL */
+.project-info{
+padding:20px;
+}
+
+.project:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 60px rgba(99,102,241,.4);
+border-color:#6366f1;
+}
+
+/* testimonials */
 
 .testimonial{
 background:rgba(255,255,255,.04);
@@ -235,7 +241,7 @@ padding:30px;
 border-radius:20px;
 }
 
-/* CONTACT */
+/* contact */
 
 form{
 max-width:500px;
@@ -254,7 +260,7 @@ background:#020617;
 color:white;
 }
 
-/* FLOATING CALL */
+/* floating call */
 
 .call{
 position:fixed;
@@ -271,7 +277,7 @@ font-size:22px;
 box-shadow:0 0 25px rgba(0,0,0,.5);
 }
 
-/* FOOTER */
+/* footer */
 
 footer{
 text-align:center;
@@ -305,12 +311,10 @@ color:#9ca3af;
 
 <section class="hero">
 
-<h1>
-Pravimo sajtove koji <span class="gradient">donose klijente</span>
-</h1>
+<h1>Pravimo sajtove koji <span class="gradient">donose klijente</span></h1>
 
 <p>
-Premium web dizajn, SEO optimizacija i strategija koja pretvara posetioce u kupce.
+Digitalna agencija specijalizovana za moderne sajtove, SEO optimizaciju i dizajn koji pretvara posetioce u kupce.
 </p>
 
 <a href="#contact" class="btn">Besplatna konsultacija</a>
@@ -338,15 +342,13 @@ Premium web dizajn, SEO optimizacija i strategija koja pretvara posetioce u kupc
 
 <section class="section" id="services">
 
-<h2 style="text-align:center;font-size:40px;margin-bottom:60px;">
-Naše Usluge
-</h2>
+<h2 style="text-align:center;font-size:40px;margin-bottom:60px;">Naše Usluge</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Web Dizajn</h3>
-<p>Moderan dizajn koji izgleda premium i prodaje vaše usluge.</p>
+<p>Moderan dizajn koji izgleda profesionalno i prodaje vaše usluge.</p>
 </div>
 
 <div class="card">
@@ -365,15 +367,25 @@ Naše Usluge
 
 <section class="section" id="portfolio">
 
-<h2 style="text-align:center;font-size:40px;">
-Portfolio
-</h2>
+<h2 style="text-align:center;font-size:40px;margin-bottom:40px;">Portfolio</h2>
 
 <div class="portfolio">
 
-<div class="project">Biznis Sajt</div>
-<div class="project">Landing Page</div>
-<div class="project">Portfolio</div>
+<a href="https://duckfamilyteam.github.io/Dubinsko-pranje-Vetar/" target="_blank" class="project">
+
+<img src="images/dubinsko-pranje-vetar.jpg">
+
+<div class="project-info">
+
+<h3>Dubinsko Pranje Vetar</h3>
+
+<p>
+Moderan i brz sajt za servis dubinskog pranja nameštaja optimizovan za mobilne uređaje.
+</p>
+
+</div>
+
+</a>
 
 </div>
 
@@ -381,20 +393,18 @@ Portfolio
 
 <section class="section">
 
-<h2 style="text-align:center;font-size:40px;margin-bottom:40px;">
-Iskustva Klijenata
-</h2>
+<h2 style="text-align:center;font-size:40px;margin-bottom:40px;">Iskustva Klijenata</h2>
 
 <div class="grid">
 
 <div class="testimonial">
 ⭐⭐⭐⭐⭐  
-"Profesionalan tim i fantastičan dizajn."
+"Profesionalna saradnja i moderan dizajn."
 </div>
 
 <div class="testimonial">
 ⭐⭐⭐⭐⭐  
-"Sajt izgleda premium i radi brzo."
+"Sajt izgleda fantastično i učitava se brzo."
 </div>
 
 </div>
@@ -403,13 +413,12 @@ Iskustva Klijenata
 
 <section class="section" id="contact" style="text-align:center;">
 
-<h2 style="font-size:45px;">
-Započnimo vaš projekat
-</h2>
+<h2 style="font-size:45px;">Započnimo vaš projekat</h2>
 
 <form>
 
 <input type="text" placeholder="Ime" required>
+
 <input type="email" placeholder="Email" required>
 
 <textarea placeholder="Poruka"></textarea>
