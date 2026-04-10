@@ -6,60 +6,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DuckFamilyTeam | Izrada Sajtova u Srbiji | Web Dizajn & SEO</title>
+<title>Izrada Sajtova Novi Sad | Web Dizajn & SEO Optimizacija | DuckFamilyTeam</title>
 
-<meta name="description" content="DuckFamilyTeam digitalna agencija. Izrada modernih sajtova, web dizajn i SEO optimizacija. Pravimo sajtove koji donose klijente i povećavaju prodaju.">
-
-<meta name="keywords" content="izrada sajtova, web dizajn, SEO optimizacija, digitalna agencija Srbija, izrada web sajtova Novi Sad">
-
+<meta name="description" content="Izrada modernih SEO optimizovanih sajtova u Srbiji. DuckFamilyTeam pravi web sajtove koji donose klijente i povećavaju prodaju.">
+<meta name="keywords" content="izrada sajtova Novi Sad, web dizajn Srbija, SEO optimizacija, digitalna agencija, landing page, wordpress sajtovi">
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/">
 
+<link rel="icon" href="images/logo.png">
+
 <!-- Open Graph -->
-<meta property="og:title" content="DuckFamilyTeam | Izrada Sajtova koji Donose Klijente">
-<meta property="og:description" content="Moderni web sajtovi, SEO i dizajn koji pretvara posetioce u klijente.">
+<meta property="og:title" content="Izrada Sajtova Novi Sad | DuckFamilyTeam">
+<meta property="og:description" content="SEO optimizovani sajtovi koji donose klijente.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/">
 <meta property="og:image" content="images/logo.png">
 
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 
-/* (tvoj CSS OSTAVLJEN ISTI) */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:#020617;color:white;overflow-x:hidden}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Inter,sans-serif;
-background:#020617;
-color:white;
-overflow-x:hidden;
-}
-
+/* BACKGROUND */
 .bg{
 position:fixed;
-top:0;
-left:0;
 width:100%;
 height:100%;
-background:
-radial-gradient(circle at 20% 30%, #6366f1 0%, transparent 50%),
-radial-gradient(circle at 80% 70%, #a855f7 0%, transparent 50%);
+top:0;left:0;
+background:radial-gradient(circle at 20% 30%, #6366f1, transparent 40%),
+radial-gradient(circle at 80% 70%, #a855f7, transparent 40%);
 filter:blur(120px);
 opacity:.5;
 z-index:-1;
 }
 
+/* NAV */
 nav{
 position:fixed;
 top:20px;
@@ -67,51 +52,34 @@ left:50%;
 transform:translateX(-50%);
 width:90%;
 max-width:1200px;
-padding:15px 30px;
+padding:15px 25px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,255,255,.05);
+background:rgba(255,255,255,0.05);
 backdrop-filter:blur(15px);
 border-radius:20px;
-border:1px solid rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,0.1);
 z-index:1000;
 }
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:800;
-}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800}
+.logo img{height:40px}
 
-.logo img{height:40px;}
-
-.nav-links{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-font-size:14px;
-opacity:.8;
-}
-
-.nav-links a:hover{opacity:1;color:#6366f1;}
+.nav-links{display:flex;gap:25px;list-style:none}
+.nav-links a{text-decoration:none;color:white;opacity:.8}
+.nav-links a:hover{opacity:1;color:#6366f1}
 
 .btn{
 background:#6366f1;
-padding:12px 25px;
+padding:12px 22px;
 border-radius:10px;
 text-decoration:none;
 color:white;
 font-weight:600;
-transition:.3s;
 }
 
+/* HERO */
 .hero{
 height:100vh;
 display:flex;
@@ -123,98 +91,87 @@ padding:20px;
 }
 
 .hero h1{
-font-size:clamp(50px,7vw,90px);
+font-size:clamp(40px,6vw,80px);
 font-weight:800;
 line-height:1.1;
-margin-bottom:20px;
-}
-
-.gradient{
-background:linear-gradient(90deg,#6366f1,#a855f7);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
 }
 
 .hero p{
 max-width:650px;
 color:#9ca3af;
-font-size:18px;
-margin-bottom:40px;
+margin-top:20px;
 }
 
-/* SEO FIX: headings */
-
-h1{font-size:48px;}
-h2{font-size:36px;}
-
 .section{
-padding:120px 6%;
+padding:100px 6%;
 max-width:1200px;
 margin:auto;
 }
 
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .card{
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.08);
-padding:40px;
+background:rgba(255,255,255,0.05);
+padding:30px;
 border-radius:20px;
-transition:.3s;
+border:1px solid rgba(255,255,255,0.08);
 }
 
-.card:hover{
-transform:translateY(-5px);
-border-color:#6366f1;
-}
-
+/* PORTFOLIO */
 .portfolio{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
 .project{
 display:block;
-background:rgba(255,255,255,.04);
-border-radius:20px;
-overflow:hidden;
-border:1px solid rgba(255,255,255,.08);
 text-decoration:none;
 color:white;
-transition:.4s;
+background:rgba(255,255,255,0.05);
+border-radius:20px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.08);
+transition:.3s;
 }
-
-.project img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.project-info{padding:20px;}
 
 .project:hover{
 transform:translateY(-8px);
-box-shadow:0 20px 60px rgba(99,102,241,.4);
 border-color:#6366f1;
 }
 
-.call{
-position:fixed;
-bottom:25px;
-right:25px;
-width:60px;
-height:60px;
-background:#22c55e;
+.project img{width:100%;height:200px;object-fit:cover}
+.project-info{padding:20px}
+
+/* CONTACT */
+form{
 display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:22px;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
+
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.1);
+background:#020617;
+color:white;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid rgba(255,255,255,0.1);
+color:#9ca3af;
+margin-top:80px;
 }
 
 </style>
@@ -225,21 +182,37 @@ font-size:22px;
 
 <div class="bg"></div>
 
-<!-- H1 SEO -->
+<!-- NAV -->
+<nav>
+
+<div class="logo">
+<img src="images/logo.png" alt="DuckFamilyTeam Logo">
+<span>DuckFamilyTeam</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="#services">Usluge</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Kontakt</a></li>
+</ul>
+
+<a href="tel:0643877529" class="btn">Pozovi</a>
+
+</nav>
+
+<!-- HERO -->
 <section class="hero">
 
-<h1>Izrada Modernih Sajtova koji Donose Klijente</h1>
+<h1>Izrada Sajtova koji Donose Klijente</h1>
 
-<p>
-DuckFamilyTeam - digitalna agencija za web dizajn i SEO optimizaciju u Srbiji.
-</p>
+<p>SEO optimizovani web sajtovi za firme u Srbiji. Dizajn + marketing + konverzija.</p>
 
 <a href="#contact" class="btn">Besplatna konsultacija</a>
 
 </section>
 
 <!-- SERVICES -->
-<section class="section">
+<section class="section" id="services">
 
 <h2>Naše Usluge</h2>
 
@@ -247,25 +220,47 @@ DuckFamilyTeam - digitalna agencija za web dizajn i SEO optimizaciju u Srbiji.
 
 <div class="card">
 <h3>Web Dizajn</h3>
-<p>Moderni sajtovi koji izgledaju premium i prodaju usluge.</p>
+<p>Moderni i brzi sajtovi koji izgledaju premium.</p>
 </div>
 
 <div class="card">
 <h3>SEO Optimizacija</h3>
-<p>Optimizacija za Google rangiranje i bolju vidljivost.</p>
+<p>Poboljšanje Google rangiranja i vidljivosti.</p>
 </div>
 
 <div class="card">
-<h3>Landing Pages</h3>
-<p>Stranice koje povećavaju konverzije i broj klijenata.</p>
+<h3>Landing Stranice</h3>
+<p>Stranice koje pretvaraju posetioce u klijente.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- PORTFOLIO -->
+<!-- SEO CONTENT -->
 <section class="section">
+
+<h2>Izrada Sajtova Novi Sad</h2>
+<p>Pravimo profesionalne sajtove za firme u Novom Sadu i Srbiji koji donose klijente putem Google pretrage.</p>
+
+</section>
+
+<section class="section">
+
+<h2>SEO Optimizacija Sajtova</h2>
+<p>Pomažemo vašem biznisu da se pojavi na Google-u i dobije više upita i poziva.</p>
+
+</section>
+
+<section class="section">
+
+<h2>Landing Stranice koje Prodaju</h2>
+<p>Kreiramo konverzione landing stranice koje povećavaju prodaju i broj klijenata.</p>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
 
 <h2>Portfolio</h2>
 
@@ -273,14 +268,11 @@ DuckFamilyTeam - digitalna agencija za web dizajn i SEO optimizaciju u Srbiji.
 
 <a class="project" href="https://duckfamilyteam.github.io/Dubinsko-pranje-Vetar/" target="_blank">
 
-<img src="images/dubinsko-pranje-vetar.jpg" alt="Sajt Dubinsko Pranje Vetar">
+<img src="images/dubinsko-pranje-vetar.jpg">
 
 <div class="project-info">
-
 <h3>Dubinsko Pranje Vetar</h3>
-
 <p>SEO optimizovan sajt za servis dubinskog pranja.</p>
-
 </div>
 
 </a>
@@ -294,22 +286,30 @@ DuckFamilyTeam - digitalna agencija za web dizajn i SEO optimizaciju u Srbiji.
 
 <h2>Kontakt</h2>
 
-<p>Pošaljite upit i krećemo sa izradom vašeg sajta.</p>
+<form>
+<input type="text" placeholder="Ime">
+<input type="email" placeholder="Email">
+<textarea placeholder="Poruka"></textarea>
+<button class="btn">Pošalji</button>
+</form>
 
 </section>
 
-<!-- LOCAL BUSINESS SCHEMA -->
+<!-- FOOTER -->
+<footer>
+© 2026 DuckFamilyTeam - Sva prava zadržana
+</footer>
+
+<!-- SEO SCHEMA -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "DuckFamilyTeam",
-  "description": "Digitalna agencija za izradu sajtova i SEO optimizaciju",
-  "url": "https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/",
-  "areaServed": "Serbia"
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"DuckFamilyTeam",
+"url":"https://duckfamilyteam.github.io/pravimo-sajtove-koji-dominiraju/",
+"areaServed":"Serbia"
 }
 </script>
 
 </body>
 </html>
-```
