@@ -8,7 +8,7 @@
 
 <title>DuckFamilyTeam | Izrada Modernih Sajtova</title>
 
-<meta name="description" content="DuckFamilyTeam digitalna agencija. Izrada modernih i brzih sajtova koji donose klijente. Web dizajn i SEO optimizacija.">
+<meta name="description" content="DuckFamilyTeam digitalna agencija. Pravimo moderne sajtove koji donose klijente.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -30,7 +30,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* gradient background */
+/* background glow */
 
 .bg{
 position:fixed;
@@ -46,7 +46,7 @@ opacity:.5;
 z-index:-1;
 }
 
-/* navbar */
+/* NAVBAR */
 
 nav{
 position:fixed;
@@ -71,12 +71,14 @@ z-index:1000;
 }
 
 .logo{
-font-size:22px;
+display:flex;
+align-items:center;
+gap:10px;
 font-weight:800;
 }
 
-.logo span{
-color:#6366f1;
+.logo img{
+height:40px;
 }
 
 .nav-links{
@@ -112,7 +114,7 @@ transform:translateY(-3px);
 box-shadow:0 10px 40px rgba(99,102,241,.5);
 }
 
-/* hero */
+/* HERO */
 
 .hero{
 height:100vh;
@@ -144,30 +146,7 @@ font-size:18px;
 margin-bottom:40px;
 }
 
-/* stats */
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:40px;
-margin-top:60px;
-max-width:800px;
-}
-
-.stat{
-text-align:center;
-}
-
-.stat h2{
-font-size:38px;
-color:#6366f1;
-}
-
-.stat p{
-color:#9ca3af;
-}
-
-/* section */
+/* SECTIONS */
 
 .section{
 padding:120px 6%;
@@ -175,7 +154,7 @@ max-width:1200px;
 margin:auto;
 }
 
-/* cards */
+/* SERVICES */
 
 .grid{
 display:grid;
@@ -196,7 +175,7 @@ transform:translateY(-5px);
 border-color:#6366f1;
 }
 
-/* portfolio */
+/* PORTFOLIO */
 
 .portfolio{
 display:grid;
@@ -232,16 +211,7 @@ box-shadow:0 20px 60px rgba(99,102,241,.4);
 border-color:#6366f1;
 }
 
-/* testimonials */
-
-.testimonial{
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.08);
-padding:30px;
-border-radius:20px;
-}
-
-/* contact */
+/* CONTACT */
 
 form{
 max-width:500px;
@@ -260,7 +230,7 @@ background:#020617;
 color:white;
 }
 
-/* floating call */
+/* FLOAT CALL */
 
 .call{
 position:fixed;
@@ -277,7 +247,7 @@ font-size:22px;
 box-shadow:0 0 25px rgba(0,0,0,.5);
 }
 
-/* footer */
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -297,7 +267,10 @@ color:#9ca3af;
 
 <nav>
 
-<div class="logo">Duck<span>Family</span>Team</div>
+<div class="logo">
+<img src="images/logo.png" alt="DuckFamilyTeam Logo">
+<span>DuckFamilyTeam</span>
+</div>
 
 <ul class="nav-links">
 <li><a href="#services">Usluge</a></li>
@@ -314,29 +287,10 @@ color:#9ca3af;
 <h1>Pravimo sajtove koji <span class="gradient">donose klijente</span></h1>
 
 <p>
-Digitalna agencija specijalizovana za moderne sajtove, SEO optimizaciju i dizajn koji pretvara posetioce u kupce.
+Digitalna agencija specijalizovana za moderne sajtove i SEO optimizaciju.
 </p>
 
 <a href="#contact" class="btn">Besplatna konsultacija</a>
-
-<div class="stats">
-
-<div class="stat">
-<h2>50+</h2>
-<p>projekata</p>
-</div>
-
-<div class="stat">
-<h2>100%</h2>
-<p>zadovoljni klijenti</p>
-</div>
-
-<div class="stat">
-<h2>5x</h2>
-<p>više konverzija</p>
-</div>
-
-</div>
 
 </section>
 
@@ -353,7 +307,7 @@ Digitalna agencija specijalizovana za moderne sajtove, SEO optimizaciju i dizajn
 
 <div class="card">
 <h3>SEO Optimizacija</h3>
-<p>Vaš sajt se pojavljuje na vrhu Google pretrage.</p>
+<p>Pomažemo vašem sajtu da se pojavi na vrhu Google pretrage.</p>
 </div>
 
 <div class="card">
@@ -373,7 +327,7 @@ Digitalna agencija specijalizovana za moderne sajtove, SEO optimizaciju i dizajn
 
 <a href="https://duckfamilyteam.github.io/Dubinsko-pranje-Vetar/" target="_blank" class="project">
 
-<img src="images/dubinsko-pranje-vetar.jpg">
+<img src="images/dubinsko-pranje-vetar.jpg" alt="Dubinsko Pranje Vetar">
 
 <div class="project-info">
 
@@ -391,26 +345,6 @@ Moderan i brz sajt za servis dubinskog pranja nameštaja optimizovan za mobilne 
 
 </section>
 
-<section class="section">
-
-<h2 style="text-align:center;font-size:40px;margin-bottom:40px;">Iskustva Klijenata</h2>
-
-<div class="grid">
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-"Profesionalna saradnja i moderan dizajn."
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-"Sajt izgleda fantastično i učitava se brzo."
-</div>
-
-</div>
-
-</section>
-
 <section class="section" id="contact" style="text-align:center;">
 
 <h2 style="font-size:45px;">Započnimo vaš projekat</h2>
@@ -418,9 +352,7 @@ Moderan i brz sajt za servis dubinskog pranja nameštaja optimizovan za mobilne 
 <form>
 
 <input type="text" placeholder="Ime" required>
-
 <input type="email" placeholder="Email" required>
-
 <textarea placeholder="Poruka"></textarea>
 
 <button class="btn">Pošalji</button>
